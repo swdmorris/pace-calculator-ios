@@ -10,18 +10,36 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *paceLabel;
+@property (weak, nonatomic) IBOutlet UIButton *distanceCalculateButton;
+@property (weak, nonatomic) IBOutlet UIButton *timeCalculateButton;
+@property (weak, nonatomic) IBOutlet UIButton *paceCalculateButton;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *distanceUnitSegmentedControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *timeUnitSegmentedControl;
+
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark- Actions
+
+- (IBAction)calculateButtonPressed:(UIButton *)sender
+{
+    if (sender == self.distanceCalculateButton) {
+        
+    } else if (sender == self.timeCalculateButton) {
+        
+    } else if (sender == self.paceCalculateButton) {
+        
+    }
 }
 
 @end

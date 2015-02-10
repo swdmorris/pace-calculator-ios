@@ -81,10 +81,12 @@
 		246F6B5B1A8A528E009B4730 /* PaceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				246F6B851A8A530F009B4730 /* Helpers */,
+				246F6B841A8A5301009B4730 /* Models */,
+				246F6B831A8A52F8009B4730 /* Views */,
+				246F6B821A8A52DE009B4730 /* View Controllers */,
 				246F6B601A8A528E009B4730 /* AppDelegate.h */,
 				246F6B611A8A528E009B4730 /* AppDelegate.m */,
-				246F6B631A8A528E009B4730 /* ViewController.h */,
-				246F6B641A8A528E009B4730 /* ViewController.m */,
 				246F6B661A8A528E009B4730 /* Main.storyboard */,
 				246F6B691A8A528E009B4730 /* Images.xcassets */,
 				246F6B6B1A8A528E009B4730 /* LaunchScreen.xib */,
@@ -117,6 +119,36 @@
 				246F6B771A8A528E009B4730 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		246F6B821A8A52DE009B4730 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				246F6B631A8A528E009B4730 /* ViewController.h */,
+				246F6B641A8A528E009B4730 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		246F6B831A8A52F8009B4730 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		246F6B841A8A5301009B4730 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		246F6B851A8A530F009B4730 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

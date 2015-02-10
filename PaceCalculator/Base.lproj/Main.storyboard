@@ -1,22 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Distance" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fSD-T2-7cc">
+                                <rect key="frame" x="16" y="20" width="197" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dw1-8x-bSZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmU-th-2fl">
+                                <rect key="frame" x="221" y="20" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="bed-p8-bDd"/>
+                                    <constraint firstAttribute="height" constant="30" id="woX-8g-t28"/>
+                                </constraints>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Jz-g3-Ead"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Fb-TJ-pwT">
+                                <rect key="frame" x="16" y="58" width="197" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yxH-EL-xST"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQy-hK-2AS">
+                                <rect key="frame" x="221" y="58" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="Maf-QW-xjo"/>
+                                    <constraint firstAttribute="height" constant="30" id="fAO-oc-rI5"/>
+                                </constraints>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pace" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMW-bA-5nc">
+                                <rect key="frame" x="16" y="96" width="197" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="15F-hX-MGB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-pd-p14">
+                                <rect key="frame" x="221" y="96" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="FEe-P2-cue"/>
+                                    <constraint firstAttribute="height" constant="30" id="OAE-5U-CUE"/>
+                                </constraints>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jph-fa-WQm">
+                                <rect key="frame" x="16" y="134" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="AXA-FJ-ryP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Miles"/>
+                                    <segment title="Kilometers"/>
+                                    <segment title="Meters"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="erm-bR-i8h">
+                                <rect key="frame" x="16" y="170" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="5hj-vp-kPH"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Minutes"/>
+                                    <segment title="Hours"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="erm-bR-i8h" firstAttribute="top" secondItem="jph-fa-WQm" secondAttribute="bottom" constant="8" id="P9V-Nq-BTe"/>
+                            <constraint firstItem="jph-fa-WQm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="STX-PM-BTE"/>
+                            <constraint firstItem="tMW-bA-5nc" firstAttribute="top" secondItem="8Fb-TJ-pwT" secondAttribute="bottom" constant="8" id="UVe-I1-hqz"/>
+                            <constraint firstItem="fSD-T2-7cc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vfl-YE-7Mp"/>
+                            <constraint firstItem="QmU-th-2fl" firstAttribute="leading" secondItem="fSD-T2-7cc" secondAttribute="trailing" constant="8" id="Vs3-mp-oHW"/>
+                            <constraint firstItem="SvD-pd-p14" firstAttribute="top" secondItem="yQy-hK-2AS" secondAttribute="bottom" constant="8" id="YD7-6f-cke"/>
+                            <constraint firstItem="QmU-th-2fl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Zh6-84-rf4"/>
+                            <constraint firstItem="QmU-th-2fl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="czU-WQ-8Wb"/>
+                            <constraint firstItem="8Fb-TJ-pwT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e0Y-Rr-tGe"/>
+                            <constraint firstItem="SvD-pd-p14" firstAttribute="leading" secondItem="tMW-bA-5nc" secondAttribute="trailing" constant="8" id="gp1-vB-hF7"/>
+                            <constraint firstItem="jph-fa-WQm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i1L-95-o5p"/>
+                            <constraint firstItem="yQy-hK-2AS" firstAttribute="top" secondItem="QmU-th-2fl" secondAttribute="bottom" constant="8" id="iJu-5V-RpD"/>
+                            <constraint firstItem="erm-bR-i8h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oGu-ST-Hzy"/>
+                            <constraint firstItem="8Fb-TJ-pwT" firstAttribute="top" secondItem="fSD-T2-7cc" secondAttribute="bottom" constant="8" id="pdv-0w-dlI"/>
+                            <constraint firstItem="SvD-pd-p14" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qGe-ba-qWq"/>
+                            <constraint firstItem="erm-bR-i8h" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sjM-qK-n9E"/>
+                            <constraint firstItem="tMW-bA-5nc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="srb-hj-bI5"/>
+                            <constraint firstItem="fSD-T2-7cc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tKR-Zq-UUS"/>
+                            <constraint firstItem="yQy-hK-2AS" firstAttribute="leading" secondItem="8Fb-TJ-pwT" secondAttribute="trailing" constant="8" id="w09-wj-FPQ"/>
+                            <constraint firstItem="jph-fa-WQm" firstAttribute="top" secondItem="SvD-pd-p14" secondAttribute="bottom" constant="8" id="y2w-ub-ar8"/>
+                            <constraint firstItem="yQy-hK-2AS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yag-KP-vIR"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
