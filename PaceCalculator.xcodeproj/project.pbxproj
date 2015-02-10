@@ -14,6 +14,7 @@
 		246F6B6A1A8A528E009B4730 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246F6B691A8A528E009B4730 /* Images.xcassets */; };
 		246F6B6D1A8A528E009B4730 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246F6B6B1A8A528E009B4730 /* LaunchScreen.xib */; };
 		246F6B791A8A528E009B4730 /* PaceCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246F6B781A8A528E009B4730 /* PaceCalculatorTests.m */; };
+		246F6B881A8A5681009B4730 /* CalculateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 246F6B871A8A5681009B4730 /* CalculateVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		246F6B721A8A528E009B4730 /* PaceCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaceCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		246F6B771A8A528E009B4730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246F6B781A8A528E009B4730 /* PaceCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaceCalculatorTests.m; sourceTree = "<group>"; };
+		246F6B861A8A5681009B4730 /* CalculateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateVC.h; sourceTree = "<group>"; };
+		246F6B871A8A5681009B4730 /* CalculateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 			children = (
 				246F6B631A8A528E009B4730 /* ViewController.h */,
 				246F6B641A8A528E009B4730 /* ViewController.m */,
+				246F6B861A8A5681009B4730 /* CalculateVC.h */,
+				246F6B871A8A5681009B4730 /* CalculateVC.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 				TargetAttributes = {
 					246F6B581A8A528E009B4730 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = FQ59VF92GG;
 					};
 					246F6B711A8A528E009B4730 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -254,6 +260,7 @@
 				246F6B651A8A528E009B4730 /* ViewController.m in Sources */,
 				246F6B621A8A528E009B4730 /* AppDelegate.m in Sources */,
 				246F6B5F1A8A528E009B4730 /* main.m in Sources */,
+				246F6B881A8A5681009B4730 /* CalculateVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +384,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PaceCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -387,7 +397,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PaceCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -446,6 +459,7 @@
 				246F6B7E1A8A528E009B4730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		246F6B7F1A8A528E009B4730 /* Build configuration list for PBXNativeTarget "PaceCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +468,7 @@
 				246F6B811A8A528E009B4730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

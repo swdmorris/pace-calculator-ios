@@ -1,17 +1,13 @@
 //
-//  ViewController.m
+//  CalculateVC.h
 //  PaceCalculator
 //
 //  Created by Spencer Morris on 2/10/15.
 //  Copyright (c) 2015 Spencer Morris. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
+@interface CalculateVC : UIViewController
 
 @end
