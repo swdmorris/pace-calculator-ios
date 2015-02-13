@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Dw1-8x-bSZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="3Rz-Rr-e2O"/>
                                 </connections>
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="30" id="yxH-EL-xST"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="guM-bp-0QD"/>
                                 </connections>
@@ -72,7 +72,7 @@
                                     <constraint firstAttribute="height" constant="30" id="15F-hX-MGB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="sbG-0n-PXT"/>
                                 </connections>
@@ -101,20 +101,9 @@
                                     <segment title="Meters"/>
                                 </segments>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="erm-bR-i8h">
-                                <rect key="frame" x="16" y="170" width="288" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="5hj-vp-kPH"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Minutes"/>
-                                    <segment title="Hours"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="erm-bR-i8h" firstAttribute="top" secondItem="jph-fa-WQm" secondAttribute="bottom" constant="8" id="P9V-Nq-BTe"/>
                             <constraint firstItem="jph-fa-WQm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="STX-PM-BTE"/>
                             <constraint firstItem="tMW-bA-5nc" firstAttribute="top" secondItem="8Fb-TJ-pwT" secondAttribute="bottom" constant="8" id="UVe-I1-hqz"/>
                             <constraint firstItem="fSD-T2-7cc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vfl-YE-7Mp"/>
@@ -126,10 +115,8 @@
                             <constraint firstItem="SvD-pd-p14" firstAttribute="leading" secondItem="tMW-bA-5nc" secondAttribute="trailing" constant="8" id="gp1-vB-hF7"/>
                             <constraint firstItem="jph-fa-WQm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i1L-95-o5p"/>
                             <constraint firstItem="yQy-hK-2AS" firstAttribute="top" secondItem="QmU-th-2fl" secondAttribute="bottom" constant="8" id="iJu-5V-RpD"/>
-                            <constraint firstItem="erm-bR-i8h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oGu-ST-Hzy"/>
                             <constraint firstItem="8Fb-TJ-pwT" firstAttribute="top" secondItem="fSD-T2-7cc" secondAttribute="bottom" constant="8" id="pdv-0w-dlI"/>
                             <constraint firstItem="SvD-pd-p14" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qGe-ba-qWq"/>
-                            <constraint firstItem="erm-bR-i8h" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sjM-qK-n9E"/>
                             <constraint firstItem="tMW-bA-5nc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="srb-hj-bI5"/>
                             <constraint firstItem="fSD-T2-7cc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tKR-Zq-UUS"/>
                             <constraint firstItem="yQy-hK-2AS" firstAttribute="leading" secondItem="8Fb-TJ-pwT" secondAttribute="trailing" constant="8" id="w09-wj-FPQ"/>
@@ -146,7 +133,6 @@
                         <outlet property="paceTextField" destination="tMW-bA-5nc" id="1OC-sM-XhY"/>
                         <outlet property="timeCalculateButton" destination="yQy-hK-2AS" id="rmh-Lm-Hxo"/>
                         <outlet property="timeTextField" destination="8Fb-TJ-pwT" id="LFx-9V-tx4"/>
-                        <outlet property="timeUnitSegmentedControl" destination="erm-bR-i8h" id="f4a-bV-S3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

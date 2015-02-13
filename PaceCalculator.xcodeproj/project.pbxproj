@@ -14,6 +14,7 @@
 		246F6B6D1A8A528E009B4730 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246F6B6B1A8A528E009B4730 /* LaunchScreen.xib */; };
 		246F6B791A8A528E009B4730 /* PaceCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 246F6B781A8A528E009B4730 /* PaceCalculatorTests.m */; };
 		246F6B881A8A5681009B4730 /* CalculateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 246F6B871A8A5681009B4730 /* CalculateVC.m */; };
+		248B07251A8D954700A6EB1B /* NSString+Customizations.m in Sources */ = {isa = PBXBuildFile; fileRef = 248B07241A8D954700A6EB1B /* NSString+Customizations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		246F6B781A8A528E009B4730 /* PaceCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaceCalculatorTests.m; sourceTree = "<group>"; };
 		246F6B861A8A5681009B4730 /* CalculateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateVC.h; sourceTree = "<group>"; };
 		246F6B871A8A5681009B4730 /* CalculateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateVC.m; sourceTree = "<group>"; };
+		248B07231A8D954700A6EB1B /* NSString+Customizations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Customizations.h"; sourceTree = "<group>"; };
+		248B07241A8D954700A6EB1B /* NSString+Customizations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Customizations.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		246F6B5B1A8A528E009B4730 /* PaceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				248B07261A8D954B00A6EB1B /* Categories */,
 				246F6B851A8A530F009B4730 /* Helpers */,
 				246F6B841A8A5301009B4730 /* Models */,
 				246F6B831A8A52F8009B4730 /* Views */,
@@ -149,6 +153,15 @@
 			children = (
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		248B07261A8D954B00A6EB1B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				248B07231A8D954700A6EB1B /* NSString+Customizations.h */,
+				248B07241A8D954700A6EB1B /* NSString+Customizations.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +268,7 @@
 				246F6B621A8A528E009B4730 /* AppDelegate.m in Sources */,
 				246F6B5F1A8A528E009B4730 /* main.m in Sources */,
 				246F6B881A8A5681009B4730 /* CalculateVC.m in Sources */,
+				248B07251A8D954700A6EB1B /* NSString+Customizations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
